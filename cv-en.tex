@@ -1,0 +1,161 @@
+% \title{My two column CV}
+% 
+% tccv (two columns curriculum vitae) is a LaTeX class inspired by
+% the template found at latextemplates.com by Alessandro Plasmati.
+% 
+% Create by Nicola Fontana, the original files can be downloaded from:
+% http://dev.entidi.com/p/tccv/
+% 
+\documentclass{tccv}
+\usepackage[english]{babel}
+\usepackage{graphicx,dblfloatfix,caption,afterpage}
+
+\begin{document}
+
+\part{Young Lee}
+
+\section{Projects and Hackings}
+
+\begin{eventlist}
+
+
+  % Minigui
+\item{September 2011 -- December 2011}
+  {}
+  {\href{https://github.com/YoungLeeNENU/MessagePlatform}{Text message platform}}
+  
+  Upper computer: PC with RedHat9.0
+  Lower computer: ARM9 with GSM module
+  Software development for the industrial automation sector: configuration
+  front-end in C with interface based on \href{http://www.gtk.org/}{GTK+},
+  web applications and sites on LAMP platforms grounded on the
+  \href{https://github.com/YoungLeeNENU/MessagePlatform}{SilverStripe} framework,
+  supervisor programs in LabVIEW and remote system in
+  \href{http://www.lua.org/}{Lua} on GNU/Linux systems.
+
+  % Serial
+\item{May 2012 -- July 2012}
+  {}
+  {Serial port's drive for ARM9}
+
+  Designing of electrical schematics on
+  2D cad and user manuals drafting.
+
+  % Bootloader
+\item{May 2012 -- June 2012}
+  {}
+  {Bootloader for GNU/Linux}
+
+  Programming, installation and trial of transfer machines for assembly,
+  adjustment and testing of gas taps. 
+
+  % SNL
+\item{November 2012 -- December 2012}
+  {}
+  {\href{https://github.com/YoungLeeNENU/A-samll-compiler-frontend}{SNL compiler's front-end}}
+
+  Implementation of a SNL (a Pascal like language) compiler's front-end using Python.
+  Complete the lexical anylasis and syntax anylasis and form the syntax tree.
+
+  % Facemash
+\item{March 2013}
+  {}
+  {Students photoes downloader}
+
+  Hacked into school's students registration system
+  and programmed an image downloader to download students' photoes and check infomations in Python. \\
+  Also build a facemash program based on the ELO Algorithm.
+
+  % Django
+\item{May 2013}
+  {}
+  {\href{https://github.com/YoungLeeNENU/a-vote-website}{Voting website}}
+
+  Build a simple voting website in Python grounded on the \href{https://www.djangoproject.com/}{Django} framework
+  followed the MVC development pattern.\\
+  Use MySQL as the back-end database.
+
+  % 采用 MVC 开发模型和 Python 的 Dajngo 框架编写了一个简单的投票网站。
+  % 数据库采用 MySQL。
+
+\end{eventlist}
+
+\personal
+[github.com/YoungLeeNENU]
+{No.2555, Jingyue Avenue \newline
+  Changchun, Jilin \newline
+  130117}
+{(+86) 155 6882 0995}
+{youngleemails@163.com}
+
+% \begin{figure}[!h]
+%   \includegraphics[width=3cm,height=3cm]{wechat.jpg}
+% \end{figure}    
+
+\section{Education}
+
+\begin{yearlist}
+
+\item[Major in Computer Science \newline
+  Bachelor degree in reading]
+  {2010 -- 2014}
+  {Northeast Normal University}
+  {Changchun, Jilin}
+
+\end{yearlist}
+
+\section{Internship experience}
+
+\begin{eventlist}
+  
+  % TCP/UDP
+\item{September 2013 -- October 2013}
+  {}
+  {\href{https://github.com/YoungLeeNENU/Cortex-M4-LED-Control}{TCP/UDP Server/Client on PC and CortexM4}}
+
+  Software development intern at Changchun Institute of Applied Chemistry (CIAC).\\
+  Developed TCP/UDP Server/Client on PC in Python and TCP/UDP Server/Client on CortexM4 with no operating system in C. \\
+  Implementation of the connection and hardware control between PC and CortexM4.\\
+  PC's Server/Client send/recieve data to assigned IP and port using the socket function.\\
+  CortexM4's Server/Client directly write the data into the TCP/UDP packet using callback functions provieded by Standalone mode in LwIP.
+
+  % 在中科院长春应用化学研究所做软件开发实习生。
+  % 实习期间在PC和无操作系统的CortexM4上分别开发了TCP/UDP的服务器/客户端，
+  % 使PC和CortexM4能够互相通信并能控制CortexM4的硬件。
+  % PC的客户端和服务器使用Python的Socket函数从指定的IP地址和端口发送/接收数据，
+  % CortexM4的客户端/服务器用C编写，使用LwIP的Standalone模式，采用回调函数指定运输层每个包的内容进行发送或接收。
+  
+\end{eventlist}
+
+% \begin{yearlist}
+
+% \item{2013}
+%   {ntdisp (\href{http://ntdisp.entidi.com/}{ntdisp.entidi.com})}
+%   {Embedded devices programmer}
+
+% \end{yearlist}
+
+\section{Language skills}
+
+\begin{factlist}
+\item{Chinese}{Native speaker}
+\item{English}{
+    CET-4: 527\\
+    CET-6: 462\\
+    Oral: good\\
+    Written: good}
+\end{factlist}
+
+\section{Software Skills}
+
+\begin{factlist}
+
+\item{Intermediate}{
+    Python, C, Linux(Ubuntu/Redhat), Emacs, Data Structures and Basic Algorithms}
+
+\item{Basic level}{
+    ARM9, CortexM4, Perl, C++, MySQL,\LaTeX, git, Windows, Functional Programming in Scheme/Common Lisp (Lisp dialect)}
+
+\end{factlist}
+
+\end{document}

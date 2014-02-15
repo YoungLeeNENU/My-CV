@@ -1,0 +1,165 @@
+% \title{My two column CV}
+% 
+% tccv (two columns curriculum vitae) is a LaTeX class inspired by
+% the template found at latextemplates.com by Alessandro Plasmati.
+% 
+% Create by Nicola Fontana, the original files can be downloaded from:
+% http://dev.entidi.com/p/tccv/
+% 
+\documentclass{tccv}
+\usepackage{CJKutf8}
+\usepackage[english]{babel}
+\usepackage{graphicx,dblfloatfix,caption,afterpage}
+
+\begin{document}
+
+\part{Young Lee}
+
+\section{Projects and Hackings}
+
+\begin{eventlist}
+
+
+  % Minigui
+\begin{CJK}{UTF8}{gbsn}    
+\item{September 2011 -- December 2011}
+  {eNTiDi software, Travagliato是的}
+  {Receive/Send text message on ARM9}
+
+  Software development for the industrial automation sector: configuration
+  front-end in C with interface based on \href{http://www.gtk.org/}{GTK+},
+  web applications and sites on LAMP platforms grounded on the
+  \href{http://www.silverstripe.org/}{SilverStripe} framework,
+  supervisor programs in LabVIEW and remote system in
+  \href{http://www.lua.org/}{Lua} on GNU/Linux systems.
+
+    % \hbox{\scalebox{0.7}[1]{扌}\kern-.3em\scalebox{0.6}[1]{暘}}
+    李旸
+    李暘
+\end{CJK}
+
+  % Serial
+\item{May 2012 -- July 2012}
+  {TEMA s.r.l., Travagliato}
+  {Serial port's drive for ARM9}
+
+  Designing of electrical schematics on
+  2D cad and user manuals drafting.
+
+  % Bootloader
+\item{May 2012 -- June 2012}
+  {TWINS s.r.l., Sarezzo}
+  {Bootloader for Linux}
+
+  Programming, installation and trial of transfer machines for assembly,
+  adjustment and testing of gas taps. 
+
+  % SNL
+\item{November 2012 -- December 2012}
+  {Elettronica EFFE-GI s.n.c., Cazzago}
+  {SNL compiler's front-end}
+
+  Implementation of configuration and logging front-end using
+  RS232 serial communications between PC and PLC-based transfer machines
+  in BASIC, Pascal and C.
+
+  % Facemash
+\item{March 2013}
+  {Seven Diesel s.p.a., Rovato}
+  {Students photoes downloader}
+
+  Planning of nozzles for diesel engines and organization of production.
+  Upgraded the management software by implementing a system for data
+  handling and automatic drawing generation (in DXF) developed on the
+  SuperBase 95 RAD tool.
+
+  % Django
+\item{May 2013 -- June 2013}
+  {TWINS s.r.l., Sarezzo}
+  {Voting website}
+
+  Programming, installation and trial of transfer machines for assembly,
+  adjustment and testing of gas taps. 
+
+\end{eventlist}
+
+% http 失效，www有效
+\personal
+[github.com/YoungLeeNENU]
+{No.2555, Jingyue Avenue \newline
+  Changchun, Jilin \newline
+  130117}
+{(+86) 155 6882 0995}
+{youngleemails@163.com}
+
+% \begin{figure}[!h]
+%   \includegraphics[width=3cm,height=3cm]{wechat.jpg}
+% \end{figure}    
+
+\section{Education}
+
+\begin{yearlist}
+
+\item[Major in Computer Science \newline
+  Bachelor degree in reading]
+  {2010 -- 2014}
+  {Northeast Normal University}
+  {Changchun, Jilin}
+
+\end{yearlist}
+
+\section{Internship experience}
+
+\begin{eventlist}
+  
+  % Django
+\item{September 2013 -- October 2013}
+  {TWINS s.r.l., Sarezzo}
+  {TCP/UDP Server/Client between PC and CortexM4 using LWIP}
+
+  Programming, installation and trial of transfer machines for assembly,
+  adjustment and testing of gas taps. 
+  
+\end{eventlist}
+
+% \begin{yearlist}
+
+% \item{2013}
+%   {ntdisp (\href{http://ntdisp.entidi.com/}{ntdisp.entidi.com})}
+%   {Embedded devices programmer}
+
+% \end{yearlist}
+
+\section{Language skills}
+
+\begin{factlist}
+\item{Chinese}{Native speaker}
+\item{English}{
+    CET-4: 527\\
+    CET-6: 462\\
+    Oral: good\\
+    Written: good}
+  % \item{Spanish}{Oral: good}
+\end{factlist}
+
+\section{Software Skills}
+
+\begin{factlist}
+
+\item{Good level}
+  {C, Python, Linux(Ubuntu, Redhat), Emacs}
+
+\item{Intermediate}
+  {Data Structures and Basic Algorithms}
+
+\item{Basic level}
+  {Windows, \newline
+    SQL operations using MySQL, \newline
+    Typesetting under Linux using \LaTeX, \newline
+    C++, \newline
+    System under Linux using Perl, \newline
+    Functional Programming using Scheme(Lisp dialect)}
+
+\end{factlist}
+
+\end{document}
