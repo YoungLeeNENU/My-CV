@@ -14,14 +14,14 @@
 
 \part{Young Lee}
 
-\section{Projects and Hackings}
+\section{Projects and Hackings}    % 项目和程序
 
 \begin{eventlist}
 
 
-  % Minigui
+  % 基于 ARM9 的手机短息平台
 \item{September 2011 -- December 2011}
-  {}
+  {Embedded System Development}
   {\href{https://github.com/YoungLeeNENU/MessagePlatform}{Text message platform}}
   
   Upper computer: PC with RedHat9.0
@@ -33,15 +33,15 @@
   supervisor programs in LabVIEW and remote system in
   \href{http://www.lua.org/}{Lua} on GNU/Linux systems.
 
-  % Serial
+  % ARM9 的串口驱动程序
 \item{May 2012 -- July 2012}
-  {}
+  {Embedded System Development}
   {Serial port's drive for ARM9}
 
   Designing of electrical schematics on
   2D cad and user manuals drafting.
 
-  % Bootloader
+  % Linux Bootloader
 \item{May 2012 -- June 2012}
   {}
   {Bootloader for GNU/Linux}
@@ -49,31 +49,37 @@
   Programming, installation and trial of transfer machines for assembly,
   adjustment and testing of gas taps. 
 
-  % SNL
+  % SNL 编译器前端
 \item{November 2012 -- December 2012}
   {}
   {\href{https://github.com/YoungLeeNENU/A-samll-compiler-frontend}{SNL compiler's front-end}}
 
   Implementation of a SNL (a Pascal like language) compiler's front-end using Python.
-  Complete the lexical anylasis and syntax anylasis and form the syntax tree.
+  Completed the lexical anylasis and syntax anylasis and formed the syntax tree.
 
-  % Facemash
+  % 使用 Python 编写了 SNL（一种类 Pascal 语言） 语言的编译器前端。
+  % 完成了词法分析和语法分析，能够形成并且存储源文件的语法分析树。
+
+  % 校园网网络爬虫
 \item{March 2013}
   {}
-  {Students photoes downloader}
+  {Python Web Spider}
 
   Hacked into school's students registration system
-  and programmed an image downloader to download students' photoes and check infomations in Python. \\
-  Also build a facemash program based on the ELO Algorithm.
+  and programmed a web spider to download students' photoes and check their infos in Python. \\ 
+  Also built a facemash program based on the ELO Algorithm.
 
-  % Django
+  % 利用学校的学籍表管理系统的漏洞编写了一个 Python 网络爬虫程序下载了全校学生的照片，并且能够查询相关学生的学籍信息。
+  % 同时也利用 ELO 算法编写了一个 facemash 程序。
+
+  % 投票网站
 \item{May 2013}
-  {}
+  {Web Development}
   {\href{https://github.com/YoungLeeNENU/a-vote-website}{Voting website}}
 
-  Build a simple voting website in Python grounded on the \href{https://www.djangoproject.com/}{Django} framework
-  followed the MVC development pattern.\\
-  Use MySQL as the back-end database.
+  Build a simple voting website in Python followed the MVC development pattern. \\ 
+  The site is grounded on the \href{https://www.djangoproject.com/}{Django} framework
+  and use MySQL as the back-end database.
 
   % 采用 MVC 开发模型和 Python 的 Dajngo 框架编写了一个简单的投票网站。
   % 数据库采用 MySQL。
@@ -104,26 +110,28 @@
 
 \end{yearlist}
 
-\section{Internship experience}
+\section{Internship experience}    % 实习经历
 
 \begin{eventlist}
   
-  % TCP/UDP
+  % PC/CortexM4 的网络通讯程序
 \item{September 2013 -- October 2013}
-  {}
+  {Embedded System Development}
   {\href{https://github.com/YoungLeeNENU/Cortex-M4-LED-Control}{TCP/UDP Server/Client on PC and CortexM4}}
 
-  Software development intern at Changchun Institute of Applied Chemistry (CIAC).\\
-  Developed TCP/UDP Server/Client on PC in Python and TCP/UDP Server/Client on CortexM4 with no operating system in C. \\
-  Implementation of the connection and hardware control between PC and CortexM4.\\
-  PC's Server/Client send/recieve data to assigned IP and port using the socket function.\\
-  CortexM4's Server/Client directly write the data into the TCP/UDP packet using callback functions provieded by Standalone mode in LwIP.
-
-  % 在中科院长春应用化学研究所做软件开发实习生。
-  % 实习期间在PC和无操作系统的CortexM4上分别开发了TCP/UDP的服务器/客户端，
-  % 使PC和CortexM4能够互相通信并能控制CortexM4的硬件。
-  % PC的客户端和服务器使用Python的Socket函数从指定的IP地址和端口发送/接收数据，
-  % CortexM4的客户端/服务器用C编写，使用LwIP的Standalone模式，采用回调函数指定运输层每个包的内容进行发送或接收。
+  Software development intern at \href{http://www.ciac.jl.cn/}{Changchun Institute of Applied Chemistry (CIAC)}.\\
+  Developed TCP/UDP Server/Client on CortexM4 without operating system and PC. 
+  Implementation of the connection and hardware control between CortexM4 and PC.\\
+  PC Server/Client in Python uses socket functions to send/recieve data.\\
+  CortexM4 Server/Client in C writes data into the TCP/UDP packet directly
+  and sends/recieves data using callback functions provided by Standalone mode in 
+  \href{http://savannah.nongnu.org/projects/lwip/}{LwIP}.
+  
+  % 在中科院长春应用化学研究所做软件开发实习生。\\
+  % 实习期间在 PC 和无操作系统的 CortexM4 上分别开发了 TCP/UDP 的服务器/客户端，
+  % 使 PC 和 CortexM4 能够互相通信并能控制 CortexM4 的硬件。\\
+  % PC 的客户端和服务器使用 Python 的 Socket 函数从指定的IP地址和端口发送/接收数据。\\
+  % CortexM4 的客户端/服务器用 C 编写。使用 LwIP 的 Standalone 模式，采用回调函数指定运输层每个包的内容进行发送或接收。
   
 \end{eventlist}
 
@@ -135,26 +143,44 @@
 
 % \end{yearlist}
 
-\section{Language skills}
+\section{Language skills}    % 语言能力
 
 \begin{factlist}
 \item{Chinese}{Native speaker}
+  % 中文
+  % 良好的中文表达能力
 \item{English}{
+    % 英文
     CET-4: 527\\
+    % 大学英语四级：527 分
     CET-6: 462\\
+    % 大学英语六级：462 分    
     Oral: good\\
-    Written: good}
+    Written: good
+    % 良好的英语听说能力和读写能力。
+  }
+
 \end{factlist}
 
-\section{Software Skills}
+\section{Software Skills}    % 专业技能
 
 \begin{factlist}
 
 \item{Intermediate}{
-    Python, C, Linux(Ubuntu/Redhat), Emacs, Data Structures and Basic Algorithms}
+    % 熟悉
+    % Python, C, Linux(Ubuntu/Redhat), Emacs, 数据结构和基本算法
+    Python, C, Linux(Ubuntu/Redhat), Emacs, Data Structures and Basic Algorithms
+  }
 
 \item{Basic level}{
-    ARM9, CortexM4, Perl, C++, MySQL,\LaTeX, git, Windows, Functional Programming in Scheme/Common Lisp (Lisp dialect)}
+    % 了解
+    % ARM9, CortexM4, Perl, C++, MySQL,\LaTeX, git, Windows, 使用 Scheme 或其他 Lisp 方言进行函数式编程
+    ARM9, CortexM4, Perl, C++, MySQL, git, \LaTeX, Windows, Functional Programming in Scheme (Lisp dialect)
+  }
+  
+  % 兴趣爱好
+  % 人工智能，自然语言处理，绘画，健身，古典音乐
+  % 酷爱编程，追求代码和设计的完美，有很强的学习能力
 
 \end{factlist}
 
