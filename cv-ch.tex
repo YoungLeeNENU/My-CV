@@ -1,165 +1,158 @@
-% \title{My two column CV}
-% 
-% tccv (two columns curriculum vitae) is a LaTeX class inspired by
-% the template found at latextemplates.com by Alessandro Plasmati.
-% 
-% Create by Nicola Fontana, the original files can be downloaded from:
-% http://dev.entidi.com/p/tccv/
-% 
 \documentclass{tccv}
-\usepackage{CJKutf8}
 \usepackage[english]{babel}
 \usepackage{graphicx,dblfloatfix,caption,afterpage}
+\usepackage{fontspec,xunicode,xltxtra}
+\newfontfamily\VeraSansYuanTi{Vera Sans YuanTi}
+\newfontfamily\ShiShangZhongHeiJianTi{ShiShangZhongHeiJianTi}
+\newfontfamily\HiraginoSansGB{Hiragino Sans GB}
 
 \begin{document}
 
-\part{Young Lee}
+\part{\VeraSansYuanTi 李旸}
 
-\section{Projects and Hackings}
+\section{\ShiShangZhongHeiJianTi 项目和程序}
 
 \begin{eventlist}
 
 
-  % Minigui
-\begin{CJK}{UTF8}{gbsn}    
-\item{September 2011 -- December 2011}
-  {eNTiDi software, Travagliato是的}
-  {Receive/Send text message on ARM9}
+\item{\ShiShangZhongHeiJianTi 2011年九月 -- 2011年12月}
+  {}
+  {\href{https://github.com/YoungLeeNENU/MessagePlatform}{\VeraSansYuanTi ARM9 手机短信平台}}
 
-  Software development for the industrial automation sector: configuration
-  front-end in C with interface based on \href{http://www.gtk.org/}{GTK+},
-  web applications and sites on LAMP platforms grounded on the
-  \href{http://www.silverstripe.org/}{SilverStripe} framework,
-  supervisor programs in LabVIEW and remote system in
-  \href{http://www.lua.org/}{Lua} on GNU/Linux systems.
+  \HiraginoSansGB
+  使用 C 语言开发了移植有 Linux 操作系统的 ARM9 手机 \\
+  短信平台的短信发送栏和短信收件箱。\\
+  上位机和下位机分别是装有 RedHat9.0 的 PC 和带有 GSM 模块的 EL-ARM9-S3C2410 开发板。\\
+  短信发送栏和收件箱的界面的绘制都是由 \href{http://www.minigui.org/en/}{MiniGUI} 提供的 \\
+  图形函数完成的。\\
+  当有 SIM 卡插入 GSM 模块时，手机短信平台就可以和其 \\
+  他手机进行短信通信。短信发送栏负责编辑并发送短信到 \\
+  其他手机，短信收件箱负责显示收到的历史短信。
+  
 
-    % \hbox{\scalebox{0.7}[1]{扌}\kern-.3em\scalebox{0.6}[1]{暘}}
-    李旸
-    李暘
-\end{CJK}
+\item{\ShiShangZhongHeiJianTi 2012年5月 -- 2012年7月}
+  {}
+  {\VeraSansYuanTi ARM9 的异步串口驱动程序}
+  
+  \HiraginoSansGB
+  使用 C 语言编写了移植有 Linux 的 ARM9 的异步串口驱 \\
+  动程序。\\
+  目标机和宿主机分别是EL-ARM9-S3C2410 开发板和装 \\
+  有 RedHat9.0（内核版本 2.4）的 PC。\\
+  驱动程序中的数据帧的收发通过控制 EL-ARM9-S3C2410 的 UART 接口完成。
+  % 驱动程序包括数据帧的收发控制，中断控制，
+  
+  % Linux Bootloader
+  % \item{May 2012 -- June 2012}
+  %   {}
+  %   {Bootloader for GNU/Linux}
 
-  % Serial
-\item{May 2012 -- July 2012}
-  {TEMA s.r.l., Travagliato}
-  {Serial port's drive for ARM9}
+  %   Programming, installation and trial of transfer machines for assembly,
+  %   adjustment and testing of gas taps. 
 
-  Designing of electrical schematics on
-  2D cad and user manuals drafting.
 
-  % Bootloader
-\item{May 2012 -- June 2012}
-  {TWINS s.r.l., Sarezzo}
-  {Bootloader for Linux}
+\item{\ShiShangZhongHeiJianTi 2012年11月 -- 2012年12月}    % DONE
+  {}
+  {\href{https://github.com/YoungLeeNENU/A-samll-compiler-frontend}{\VeraSansYuanTi SNL 编译器前端}}
+  
+  \HiraginoSansGB
+  使用 Python 编写了 SNL（一种类 Pascal 语言） 语言的 \\
+  编译器前端。 \\
+  完成了词法分析和语法分析，为编译器后端生成了语法分 \\
+  析树。
 
-  Programming, installation and trial of transfer machines for assembly,
-  adjustment and testing of gas taps. 
 
-  % SNL
-\item{November 2012 -- December 2012}
-  {Elettronica EFFE-GI s.n.c., Cazzago}
-  {SNL compiler's front-end}
+\item{\ShiShangZhongHeiJianTi 2013年3月}    % DONE
+  {}
+  {\VeraSansYuanTi 校园网网络爬虫}
 
-  Implementation of configuration and logging front-end using
-  RS232 serial communications between PC and PLC-based transfer machines
-  in BASIC, Pascal and C.
+  \HiraginoSansGB  
+  利用学校的学籍表管理系统的漏洞编写了一个 Python 网 \\
+  络爬虫程序下载了全校学生的照片，并且能够查询相关学 \\
+  生的学籍信息。 \\
+  同时也编写了一个基于 ELO 算法的 facemash 程序，对 \\
+  下载的照片进行排名。
 
-  % Facemash
-\item{March 2013}
-  {Seven Diesel s.p.a., Rovato}
-  {Students photoes downloader}
 
-  Planning of nozzles for diesel engines and organization of production.
-  Upgraded the management software by implementing a system for data
-  handling and automatic drawing generation (in DXF) developed on the
-  SuperBase 95 RAD tool.
+\item{\ShiShangZhongHeiJianTi 2013年5月}    % DONE
+  {}
+  {\href{https://github.com/YoungLeeNENU/a-vote-website}{\VeraSansYuanTi 校园投票统计网站}}
 
-  % Django
-\item{May 2013 -- June 2013}
-  {TWINS s.r.l., Sarezzo}
-  {Voting website}
-
-  Programming, installation and trial of transfer machines for assembly,
-  adjustment and testing of gas taps. 
+  \HiraginoSansGB    
+  采用 Python 的 \href{https://www.djangoproject.com/}{Django} 框架编写了一个简易的校园投票 \\
+  统计网站。\\
+  网站采用采用 MVC 开发模型，使用 MySQL作为后台的 \\
+  数据库。
 
 \end{eventlist}
 
-% http 失效，www有效
 \personal
-[github.com/YoungLeeNENU]
-{No.2555, Jingyue Avenue \newline
-  Changchun, Jilin \newline
-  130117}
-{(+86) 155 6882 0995}
-{youngleemails@163.com}
+[\VeraSansYuanTi github.com/YoungLeeNENU]
+{\VeraSansYuanTi 吉林省长春市净月大街 2555 号 \newline
+  邮政编码 130117}
+{\VeraSansYuanTi (+86) 155 6882 0995}
+{\VeraSansYuanTi youngleemails@163.com}
 
-% \begin{figure}[!h]
-%   \includegraphics[width=3cm,height=3cm]{wechat.jpg}
-% \end{figure}    
-
-\section{Education}
+\section{\ShiShangZhongHeiJianTi 教育水平}
 
 \begin{yearlist}
 
-\item[Major in Computer Science \newline
-  Bachelor degree in reading]
-  {2010 -- 2014}
-  {Northeast Normal University}
-  {Changchun, Jilin}
+\item[\HiraginoSansGB 计算机科学与信息技术专业 \newline
+  本科学士学位]
+  {\ShiShangZhongHeiJianTi 2010年 -- 2014年}
+  {\href{http://www.nenu.edu.cn/}{\HiraginoSansGB 东北师范大学}}
+  {\HiraginoSansGB 吉林省长春市}
 
 \end{yearlist}
 
-\section{Internship experience}
+\section{\ShiShangZhongHeiJianTi 实习经历}
 
 \begin{eventlist}
   
-  % Django
-\item{September 2013 -- October 2013}
-  {TWINS s.r.l., Sarezzo}
-  {TCP/UDP Server/Client between PC and CortexM4 using LWIP}
 
-  Programming, installation and trial of transfer machines for assembly,
-  adjustment and testing of gas taps. 
-  
+\item{\ShiShangZhongHeiJianTi 2013年9月 -- 2013年10月}
+  {}
+  {\href{https://github.com/YoungLeeNENU/Cortex-M4-LED-Control}{\VeraSansYuanTi PC/CortexM4 的网络通讯程序}}
+
+  \HiraginoSansGB
+  作为软件开发实习生在\href{http://www.ciac.jl.cn/}{中科院长春应用化学研究所}实习。\\
+  实习期间在 PC 和无操作系统的 CortexM4 上分别开发 \\
+  了 TCP/UDP 的服务器/客户端。\\
+  使 PC 和 CortexM4 能够互相通信并能控制 CortexM4 的硬件。\\
+  PC 的客户端和服务器调用 Python 的 Socket 函数从指 \\ 
+  定的IP地址和端口发送或接收数据。\\
+  CortexM4 的客户端/服务器用 C 编写，
+  使用 \href{http://savannah.nongnu.org/projects/lwip/}{LwIP} 的 Standalone 模式，采用回调函数指定运输层每个包的内 \\
+  容进行发送或接收。
 \end{eventlist}
 
-% \begin{yearlist}
-
-% \item{2013}
-%   {ntdisp (\href{http://ntdisp.entidi.com/}{ntdisp.entidi.com})}
-%   {Embedded devices programmer}
-
-% \end{yearlist}
-
-\section{Language skills}
+\section{\ShiShangZhongHeiJianTi 语言能力}
 
 \begin{factlist}
-\item{Chinese}{Native speaker}
-\item{English}{
-    CET-4: 527\\
-    CET-6: 462\\
-    Oral: good\\
-    Written: good}
-  % \item{Spanish}{Oral: good}
+\item{\HiraginoSansGB 汉语}{\HiraginoSansGB 作为母语具有良好的表达和沟通能力 \\
+    曾参加东北师范大学留学生部对外汉语教学活动 \\ 
+    并被评为优秀志愿者}
+\item{\HiraginoSansGB 英语}{
+    \HiraginoSansGB 大学英语四级：527分 \\
+    \HiraginoSansGB 大学英语六级：462分 \\
+    \HiraginoSansGB 口语流利，\\
+    \HiraginoSansGB 能够阅读和编写英文技术文档
+  }
+
 \end{factlist}
 
-\section{Software Skills}
+\section{\ShiShangZhongHeiJianTi 专业技能}
 
 \begin{factlist}
 
-\item{Good level}
-  {C, Python, Linux(Ubuntu, Redhat), Emacs}
+\item{\HiraginoSansGB 熟悉}{
+    \HiraginoSansGB Python, C, Linux(Ubuntu/Redhat), Emacs, 数据结构和基本算法
+  }
 
-\item{Intermediate}
-  {Data Structures and Basic Algorithms}
-
-\item{Basic level}
-  {Windows, \newline
-    SQL operations using MySQL, \newline
-    Typesetting under Linux using \LaTeX, \newline
-    C++, \newline
-    System under Linux using Perl, \newline
-    Functional Programming using Scheme(Lisp dialect)}
-
+\item{\HiraginoSansGB 了解}{
+    \HiraginoSansGB ARM9, CortexM4, Perl, C++, MySQL, git, \LaTeX, Windows, 使用 Lisp 进行函数式编程
+  }
+  
 \end{factlist}
 
 \end{document}
