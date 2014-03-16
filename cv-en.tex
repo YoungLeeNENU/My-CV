@@ -1,9 +1,9 @@
-% \title{My two column CV}
+% \title{Young Lee's two column CV}
 % 
 % tccv (two columns curriculum vitae) is a LaTeX class inspired by
 % the template found at latextemplates.com by Alessandro Plasmati.
 % 
-% Create by Nicola Fontana, the original files can be downloaded from:
+% Create by Young Lee, the original files can be downloaded from:
 % http://dev.entidi.com/p/tccv/
 % 
 \documentclass{tccv}
@@ -14,70 +14,77 @@
 
 \part{Young Lee}
 
-\section{Projects and Hackings}    % 项目和程序
+\section{Projects and hackings}    % TODO
 
 \begin{eventlist}
 
 
   % 基于 ARM9 的手机短息平台
 \item{September 2011 -- December 2011}
-  {Embedded System Development}
-  {\href{https://github.com/YoungLeeNENU/MessagePlatform}{Text message platform}}
-  
-  Upper computer: PC with RedHat9.0
-  Lower computer: ARM9 with GSM module
-  Software development for the industrial automation sector: configuration
-  front-end in C with interface based on \href{http://www.gtk.org/}{GTK+},
-  web applications and sites on LAMP platforms grounded on the
-  \href{https://github.com/YoungLeeNENU/MessagePlatform}{SilverStripe} framework,
-  supervisor programs in LabVIEW and remote system in
-  \href{http://www.lua.org/}{Lua} on GNU/Linux systems.
+  {}
+  {\href{https://github.com/YoungLeeNENU/MessagePlatform}{Text message platform for ARM9}}
 
+  Developed the message sender and message box of a text message platform for ARM9 embedded with Linux in C. \\
+  A PC with RedHat9.0 is the upper computer, and EL-ARM9-S3C2410 with extended GSM module is the lower computer. \\
+  The message platform is grounded on the \href{http://www.minigui.org/en/}{MiniGUI} graphic librariy. \\
+  With a SIM card placed on the GSM module, the message sender can edit and send a text message to the mobile phone with certain number,
+  and the message box can show all the text messages have been recieved from other mobile phones.
+
+  % 使用 C 语言开发了嵌入有 Linux 的 ARM9 的手机短息平台的短信发送栏和短信收件箱。
+  % 上位机和下位机分别是装有 RedHat9.0 的 PC 和 EL-ARM9-S3C2410 开发板。
+  % 短信发送栏和收件箱的界面都是由 MiniGUI 提供的图形绘制成的。
+  % 当有 SIM 卡插入 GSM 模块时，手机短信平台就可以和其他手机进行短信通信，短信发送栏编辑并发送短息到其他手机，短信收件箱显示收到的历史短信。
+  
   % ARM9 的串口驱动程序
 \item{May 2012 -- July 2012}
-  {Embedded System Development}
-  {Serial port's drive for ARM9}
+  {}
+  {Asynchronous serial port driver for ARM9}
 
-  Designing of electrical schematics on
-  2D cad and user manuals drafting.
+  Programed an asynchronous serial port (followed the RS232 standard) driver for EL-ARM9-S3C2410 embedded with Linux in C. \\
+  A PC with RedHat9.0 (kernel version 2.4) is the upper computer, and EL-ARM9-S3C2410 is the lower computer. \\
+  The driver sends/recieves the data frames by operating the UART interfaces on EL-ARM9-S3C2410.
+
+  % 使用 C 语言编写了嵌入有 Linux 的 EL-ARM9-S3C2410 的异步串口驱动程序。
+  % 上位机和下位机分别是装有 RedHat9.0 （内核版本号 2.4） 的 PC 和 EL-ARM9-S3C2410 开发板。
+  % 驱动程序中的数据帧的收发通过控制 EL-ARM9-S3C2410 的 UART 接口完成。
 
   % Linux Bootloader
-\item{May 2012 -- June 2012}
-  {}
-  {Bootloader for GNU/Linux}
+% \item{May 2012 -- June 2012}
+%   {}
+%   {Bootloader for GNU/Linux}
 
-  Programming, installation and trial of transfer machines for assembly,
-  adjustment and testing of gas taps. 
+%   Programming, installation and trial of transfer machines for assembly,
+%   adjustment and testing of gas taps. 
 
   % SNL 编译器前端
-\item{November 2012 -- December 2012}
+\item{November 2012 -- December 2012}    % DONE
   {}
   {\href{https://github.com/YoungLeeNENU/A-samll-compiler-frontend}{SNL compiler's front-end}}
 
-  Implementation of a SNL (a Pascal like language) compiler's front-end using Python.
-  Completed the lexical anylasis and syntax anylasis and formed the syntax tree.
+  Implementation of a SNL (a Pascal like language) compiler's front-end using Python. \\
+  Completed the lexical analysis and syntax analysis and formed the syntax tree for the compiler's back-end.
 
   % 使用 Python 编写了 SNL（一种类 Pascal 语言） 语言的编译器前端。
-  % 完成了词法分析和语法分析，能够形成并且存储源文件的语法分析树。
+  % 完成了词法分析和语法分析，为编译器后端生成了语法分析树。
 
   % 校园网网络爬虫
-\item{March 2013}
+\item{March 2013}    % DONE
   {}
-  {Python Web Spider}
+  {Web spider in campus}
 
   Hacked into school's students registration system
-  and programmed a web spider to download students' photoes and check their infos in Python. \\ 
+  and built a web spider in Python to download students' photoes and check their informations. \\ 
   Also built a facemash program based on the ELO Algorithm.
 
   % 利用学校的学籍表管理系统的漏洞编写了一个 Python 网络爬虫程序下载了全校学生的照片，并且能够查询相关学生的学籍信息。
   % 同时也利用 ELO 算法编写了一个 facemash 程序。
 
   % 投票网站
-\item{May 2013}
-  {Web Development}
+\item{May 2013}    % DONE
+  {}
   {\href{https://github.com/YoungLeeNENU/a-vote-website}{Voting website}}
 
-  Build a simple voting website in Python followed the MVC development pattern. \\ 
+  Built a simple voting website in Python followed the MVC development pattern. \\ 
   The site is grounded on the \href{https://www.djangoproject.com/}{Django} framework
   and use MySQL as the back-end database.
 
@@ -105,7 +112,7 @@
 \item[Major in Computer Science \newline
   Bachelor degree in reading]
   {2010 -- 2014}
-  {Northeast Normal University}
+  {\href{http://www.nenu.edu.cn/}{Northeast Normal University}}
   {Changchun, Jilin}
 
 \end{yearlist}
@@ -116,7 +123,7 @@
   
   % PC/CortexM4 的网络通讯程序
 \item{September 2013 -- October 2013}
-  {Embedded System Development}
+  {}
   {\href{https://github.com/YoungLeeNENU/Cortex-M4-LED-Control}{TCP/UDP Server/Client on PC and CortexM4}}
 
   Software development intern at \href{http://www.ciac.jl.cn/}{Changchun Institute of Applied Chemistry (CIAC)}.\\
@@ -162,7 +169,7 @@
 
 \end{factlist}
 
-\section{Software Skills}    % 专业技能
+\section{Software skills}    % 专业技能
 
 \begin{factlist}
 
@@ -175,13 +182,9 @@
 \item{Basic level}{
     % 了解
     % ARM9, CortexM4, Perl, C++, MySQL,\LaTeX, git, Windows, 使用 Scheme 或其他 Lisp 方言进行函数式编程
-    ARM9, CortexM4, Perl, C++, MySQL, git, \LaTeX, Windows, Functional Programming in Scheme (Lisp dialect)
+    ARM9, CortexM4, Perl, C++, MySQL, git, \LaTeX, Windows, Functional Programming in Lisp
   }
   
-  % 兴趣爱好
-  % 人工智能，自然语言处理，绘画，健身，古典音乐
-  % 酷爱编程，追求代码和设计的完美，有很强的学习能力
-
 \end{factlist}
 
 \end{document}
