@@ -1,3 +1,6 @@
+% 李暘的中文简历
+% 使用 tccv 模版
+% 用 xelatex 编译生成 pdf 文件
 \documentclass{tccv}
 \usepackage[english]{babel}
 \usepackage{graphicx,dblfloatfix,caption,afterpage}
@@ -5,33 +8,36 @@
 \newfontfamily\VeraSansYuanTi{Vera Sans YuanTi}
 \newfontfamily\ShiShangZhongHeiJianTi{ShiShangZhongHeiJianTi}
 \newfontfamily\HiraginoSansGB{Hiragino Sans GB}
+\newfontfamily\ZapfChancery{ITC Zapf Chancery Std}
+
 
 \begin{document}
 
-\part{\VeraSansYuanTi 李旸}
+\part{\VeraSansYuanTi 李旸\\
+  \ZapfChancery Curriculum vitae}
 
 \section{\ShiShangZhongHeiJianTi 项目和程序}
 
 \begin{eventlist}
 
 
-\item{\ShiShangZhongHeiJianTi 2011年九月 -- 2011年12月}
-  {}
+\item{\ShiShangZhongHeiJianTi 2011年9月 - 2011年12月}
+  {\ShiShangZhongHeiJianTi 嵌入式系统设计}
   {\href{https://github.com/YoungLeeNENU/MessagePlatform}{\VeraSansYuanTi ARM9 手机短信平台}}
 
   \HiraginoSansGB
   使用 C 语言开发了移植有 Linux 操作系统的 ARM9 手机 \\
-  短信平台的短信发送栏和短信收件箱。\\
+  短信平台中的短信发送栏和短信收件箱。\\
   上位机和下位机分别是装有 RedHat9.0 的 PC 和带有 GSM 模块的 EL-ARM9-S3C2410 开发板。\\
-  短信发送栏和收件箱的界面的绘制都是由 \href{http://www.minigui.org/en/}{MiniGUI} 提供的 \\
-  图形函数完成的。\\
+  短信发送栏和短信收件箱的图形界面的绘制均由 \href{http://www.minigui.org/en/}{MiniGUI} \\
+  提供的图形函数完成。\\
   当有 SIM 卡插入 GSM 模块时，手机短信平台就可以和其 \\
   他手机进行短信通信。短信发送栏负责编辑并发送短信到 \\
   其他手机，短信收件箱负责显示收到的历史短信。
   
 
-\item{\ShiShangZhongHeiJianTi 2012年5月 -- 2012年7月}
-  {}
+\item{\ShiShangZhongHeiJianTi 2012年5月 - 2012年7月}
+  {\ShiShangZhongHeiJianTi 嵌入式系统设计}
   {\VeraSansYuanTi ARM9 的异步串口驱动程序}
   
   \HiraginoSansGB
@@ -39,20 +45,11 @@
   动程序。\\
   目标机和宿主机分别是EL-ARM9-S3C2410 开发板和装 \\
   有 RedHat9.0（内核版本 2.4）的 PC。\\
-  驱动程序中的数据帧的收发通过控制 EL-ARM9-S3C2410 的 UART 接口完成。
-  % 驱动程序包括数据帧的收发控制，中断控制，
+  驱动程序中数据帧的收发和中断处理通过控制 ARM9 的 UART 接口完成。
   
-  % Linux Bootloader
-  % \item{May 2012 -- June 2012}
-  %   {}
-  %   {Bootloader for GNU/Linux}
 
-  %   Programming, installation and trial of transfer machines for assembly,
-  %   adjustment and testing of gas taps. 
-
-
-\item{\ShiShangZhongHeiJianTi 2012年11月 -- 2012年12月}    % DONE
-  {}
+\item{\ShiShangZhongHeiJianTi 2012年11月 - 2012年12月}
+  {\ShiShangZhongHeiJianTi 编译器设计}
   {\href{https://github.com/YoungLeeNENU/A-samll-compiler-frontend}{\VeraSansYuanTi SNL 编译器前端}}
   
   \HiraginoSansGB
@@ -62,27 +59,27 @@
   析树。
 
 
-\item{\ShiShangZhongHeiJianTi 2013年3月}    % DONE
-  {}
+\item{\ShiShangZhongHeiJianTi 2013年3月}
+  {\ShiShangZhongHeiJianTi 网络编程}
   {\VeraSansYuanTi 校园网网络爬虫}
 
   \HiraginoSansGB  
-  利用学校的学籍表管理系统的漏洞编写了一个 Python 网 \\
-  络爬虫程序下载了全校学生的照片，并且能够查询相关学 \\
-  生的学籍信息。 \\
+  利用学校学籍表管理系统的漏洞编写了一个 Python 网络 \\
+  爬虫程序下载了全校学生的照片，并且能够查询相关学生 \\
+  的学籍信息。 \\
   同时也编写了一个基于 ELO 算法的 facemash 程序，对 \\
   下载的照片进行排名。
 
 
-\item{\ShiShangZhongHeiJianTi 2013年5月}    % DONE
-  {}
+\item{\ShiShangZhongHeiJianTi 2013年5月}
+  {\ShiShangZhongHeiJianTi Web 开发}
   {\href{https://github.com/YoungLeeNENU/a-vote-website}{\VeraSansYuanTi 校园投票统计网站}}
 
   \HiraginoSansGB    
   采用 Python 的 \href{https://www.djangoproject.com/}{Django} 框架编写了一个简易的校园投票 \\
-  统计网站。\\
-  网站采用采用 MVC 开发模型，使用 MySQL作为后台的 \\
-  数据库。
+  统计网站。用户可以在网站填写调查问卷，网站能够统计 \\
+  并反馈问卷的调查结果。网站采用 MVC 开发模型，使用 MySQL 作为后台数据库。
+  
 
 \end{eventlist}
 
@@ -99,9 +96,9 @@
 
 \item[\HiraginoSansGB 计算机科学与信息技术专业 \newline
   本科学士学位]
-  {\ShiShangZhongHeiJianTi 2010年 -- 2014年}
+  {\ShiShangZhongHeiJianTi 2010年 - 2014年}
   {\href{http://www.nenu.edu.cn/}{\HiraginoSansGB 东北师范大学}}
-  {\HiraginoSansGB 吉林省长春市}
+  % {\HiraginoSansGB 吉林省长春市}
 
 \end{yearlist}
 
@@ -110,35 +107,34 @@
 \begin{eventlist}
   
 
-\item{\ShiShangZhongHeiJianTi 2013年9月 -- 2013年10月}
-  {}
+\item{\ShiShangZhongHeiJianTi 2013年9月 - 2013年10月}
+  {\ShiShangZhongHeiJianTi 嵌入式系统设计}
   {\href{https://github.com/YoungLeeNENU/Cortex-M4-LED-Control}{\VeraSansYuanTi PC/CortexM4 的网络通讯程序}}
 
   \HiraginoSansGB
   作为软件开发实习生在\href{http://www.ciac.jl.cn/}{中科院长春应用化学研究所}实习。\\
   实习期间在 PC 和无操作系统的 CortexM4 上分别开发 \\
   了 TCP/UDP 的服务器/客户端。\\
-  使 PC 和 CortexM4 能够互相通信并能控制 CortexM4 的硬件。\\
+  使 PC 和 CortexM4 能够互相通信并能从 PC 端控制 CortexM4 的硬件。\\
   PC 的客户端和服务器调用 Python 的 Socket 函数从指 \\ 
   定的IP地址和端口发送或接收数据。\\
-  CortexM4 的客户端/服务器用 C 编写，
-  使用 \href{http://savannah.nongnu.org/projects/lwip/}{LwIP} 的 Standalone 模式，采用回调函数指定运输层每个包的内 \\
-  容进行发送或接收。
+  CortexM4 的客户端和服务器用 C 编写，
+  使用 \href{http://savannah.nongnu.org/projects/lwip/}{LwIP} 的 Standalone 模式，指定运输层数据包的内容并采用回调 \\ 
+  函数进行数据包的发送或接收。
 \end{eventlist}
 
 \section{\ShiShangZhongHeiJianTi 语言能力}
 
 \begin{factlist}
 \item{\HiraginoSansGB 汉语}{\HiraginoSansGB 作为母语具有良好的表达和沟通能力 \\
-    曾参加东北师范大学留学生部对外汉语教学活动 \\ 
+    曾参加东北师范大学留学生部对外汉语教学项目 \\ 
     并被评为优秀志愿者}
 \item{\HiraginoSansGB 英语}{
     \HiraginoSansGB 大学英语四级：527分 \\
     \HiraginoSansGB 大学英语六级：462分 \\
-    \HiraginoSansGB 口语流利，\\
-    \HiraginoSansGB 能够阅读和编写英文技术文档
+    \HiraginoSansGB 口语流利，沟通能力强 \\
+    \HiraginoSansGB 具备阅读和编写英文技术文档的能力
   }
-
 \end{factlist}
 
 \section{\ShiShangZhongHeiJianTi 专业技能}
@@ -146,13 +142,16 @@
 \begin{factlist}
 
 \item{\HiraginoSansGB 熟悉}{
-    \HiraginoSansGB Python, C, Linux(Ubuntu/Redhat), Emacs, 数据结构和基本算法
+    \HiraginoSansGB Python、C、Linux(Ubuntu/Redhat)、 \\
+    Emacs、数据结构和基本算法
   }
 
 \item{\HiraginoSansGB 了解}{
-    \HiraginoSansGB ARM9, CortexM4, Perl, C++, MySQL, git, \LaTeX, Windows, 使用 Lisp 进行函数式编程
+    \HiraginoSansGB ARM9、CortexM4、Keil、Perl、C++、 \\
+    MySQL、git、\LaTeX、Windows、 \\
+    使用 Lisp 进行函数式编程
   }
-  
+
 \end{factlist}
 
 \end{document}
